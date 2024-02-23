@@ -150,7 +150,13 @@ Based on these results for the confusion matrix, I would conclude that the class
 
 # Results Summary
 
-|:--------------------------:|
+| Left |  Center  | Right |
+|:-----|:--------:|------:|
+| L0   | **bold** | $1600 |
+| L1   |  `code`  |   $12 |
+| L2   | _italic_ |    $1 |
+
+
 |       Confusion Matrix     |
 |:-----:|:--:|:--:|:--:|:---:|
 | Model	| TN | FP |	FN |  TP |

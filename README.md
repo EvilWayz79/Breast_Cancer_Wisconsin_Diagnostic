@@ -150,21 +150,21 @@ Based on these results for the confusion matrix, I would conclude that the class
 
 # Results Summary
 
-***-----------------------------------------------------***
-***---------------CONFUSION MATRIX----------------------***
-              Model  TN  FP  FN  TP
-            0   MLP  41   2   1  70
-            1    RF  40   3   1  70
-            2    LR  41   2   0  71
-***-----------------------------------------------------***
-***-----------------------------------------------------***
-***---------------MODEL INDEX RESUME--------------------***
-            Model     Acc   Pres+  Recall+     f1+
-        0   MLP  0.9737  0.9722   0.9859  0.9790
-        1    RF  0.9649  0.9589   0.9859  0.9722
-        2    LR  0.9825  0.9726   1.0000  0.9861
-***-----------------------------------------------------***
-***-----------------------------------------------------***
+Confusion Matrix
+Table
+
+Model	TN	FP	FN	TP
+MLP	41	2	1	70
+RF	40	3	1	70
+LR	41	2	0	71
+
+Model Index Resume
+Table
+
+Model	Accuracy	Precision+	Recall+	F1+
+MLP	0.9737	0.9722	0.9859	0.9790
+RF	0.9649	0.9589	0.9859	0.9722
+LR	0.9825	0.9726	1.0000	0.9861
 
 # FINAL CONCLUSIONS
 

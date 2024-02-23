@@ -150,8 +150,9 @@ Based on these results for the confusion matrix, I would conclude that the class
 
 # Results Summary
 
-|       Confusion Matrix     |
 |:--------------------------:|
+|       Confusion Matrix     |
+|:-----:|:--:|:--:|:--:|:---:|
 | Model	| TN | FP |	FN |  TP |
 | MLP	| 41 | 2  |  1 |  70 |
 | RF	| 40 | 3  |  1 |  70 |

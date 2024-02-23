@@ -18,6 +18,9 @@ we will follow the next algorithm for the data analysis:
 * Import dataset from sklearn.datasets -- if you want to use the online version of the dataset
 * Load dataset
 * Data process
+    * delete NaN column
+    * Transform target column to binary
+    * Separate data from target
 * Check results
 * Split the data into train and test subsets
 * Normalize the features in order for the model to have better performance and avoid bias by features that have larger values.

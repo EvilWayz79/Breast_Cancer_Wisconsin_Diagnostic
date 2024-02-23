@@ -1,16 +1,16 @@
 # Breast_Cancer_Wisconsin_Diagnostic
 
-# Rubén Recalde
+## Rubén Recalde
 
 
 This repository contains an analysis of the Breast Cancer Wisconsin (Diagnostic) dataset. The goal is to predict whether breast masses are benign or malignant based on various features computed from digitized images of fine needle aspirate (FNA) samples.
 
 
-I'm going to use the following methods to analyse the dataset
+### Methods Used:
 
 * Multi Layer Perceptron    MLP
 * Random Forest             RF
-* Linear regression         LR
+* Logistic Regression         LR
 
 we will follow the next algorithm for the data analysis:
 
@@ -27,7 +27,7 @@ we will follow the next algorithm for the data analysis:
 * Set up data in values between 0 and 1
 
 
-# Define the MLP (Multi Layer Perceptron) model
+### Define the MLP (Multi Layer Perceptron) model
 
 * The choice of the number of layers, neurons, activation functions, and hyperparameters can affect the performance and generalization of the model. I decided on these values based  on some common practices and heuristics for MLP design, such as:
     * Using a sigmoid activation function for the output layer, since this is a binary classification problem.
@@ -50,11 +50,11 @@ we will follow the next algorithm for the data analysis:
 * Get the recall score, which os the proportion of positive samples that are correctly predicted
 
 
-# Conclusions from MLP analysis
+### Conclusions from MLP analysis
 
 Based on these results for the confusion matrix, I would conclude that the classification model is very accurate and has high performance on the test set.
 
-# Results analysis
+### Results analysis
 
 * True Positives (TP): The model accurately   predicted 70 malignant cases (actual positives).
 * True Negatives (TN): The model accurately   predicted 41 benign cases (actual negatives).
@@ -74,7 +74,7 @@ Based on these results for the confusion matrix, I would conclude that the class
 
 * The MLP approach to this dataset yields a very good overall score. The model effectively balances precision and recall, making it a robust choice for breast cancer prediction.
 
-# Random Forest Approach RF
+### Random Forest Approach RF
 * We already have the dataset, X (data) and y (target)  test and training are already separated too. 
 * ready to work!
 * Initialize the Random Forest Classifier
@@ -88,11 +88,11 @@ Based on these results for the confusion matrix, I would conclude that the class
 * Get the confusion matrix
 * Print the confusion matrix
 
-# Conclusions from Random Forest analysis
+### Conclusions from Random Forest analysis
 
 Based on these results for the confusion matrix, I would conclude that the classification model is very accurate and has high performance on the test set.
 
-# Results analysis
+### Results analysis
 
 * True Positives (TP): The model accurately  predicted 70 malignant cases (actual positives).
 * True Negatives (TN): The model accurately  predicted 40 benign cases (actual negatives).
@@ -113,7 +113,7 @@ Based on these results for the confusion matrix, I would conclude that the class
 * The Random Forest approach to this dataset yields a very good overall score. The model effectively balances precision and recall, making it a robust choice for breast cancer prediction.
 
 
-# Logistic Regression LR
+### Logistic Regression LR
 
 * Using previously stated train and test data
 * Generate model
@@ -127,11 +127,11 @@ Based on these results for the confusion matrix, I would conclude that the class
 * Calculate confusion matrix for LR
 * Plot confusion matrix for LR
 
-# Conclusions from Linear Regression analysis
+### Conclusions from Logistic Regression analysis
 
 Based on these results for the confusion matrix, I would conclude that the classification model is very accurate and has high performance on the test set.
 
-# Results analysis
+### Results analysis
 
 * True Positives (TP): The model correctly predicted 70 malignant cases (actual positives).
 * True Negatives (TN): The model correctly predicted 41 benign cases (actual negatives).
@@ -151,7 +151,7 @@ Based on these results for the confusion matrix, I would conclude that the class
 
 * The Linear approach to this dataset yields a perfect score for screening cancer tests as it would not confuse FN diagnosis. The abscense of false negatives is crucial for patient survival
 
-# Results Summary
+### Results Summary
 
 **Confusion Matrix Summary**
 | Model | TN | FP | FN | TP |
@@ -170,7 +170,7 @@ Based on these results for the confusion matrix, I would conclude that the class
 | LR    | 0.9825   |	0.9726  |  1.0000 |  0.9861  |
 
 
-# FINAL CONCLUSIONS
+### FINAL CONCLUSIONS
 
 Based on the gathered results we can assert the following:
 
@@ -180,3 +180,24 @@ Based on the gathered results we can assert the following:
     * The F1 score (harmonic mean of precision and recall) is also high (0.9861).
     * LR has the least combination between FP and FN (2, 0) from the models
 * Therefore, Logistic Regression appears to be the best model for the proposed Breast Cancer Wisconsin dataset, emphasizing its ability to minimize false negatives and accurately predict malignant cases.
+
+### Recomendations
+
+1. **Model Selection and Validation:**
+Continue using the Logistic Regression (LR) model as it performed well in terms of recall, F1 score, and minimizing false negatives.
+Validate the LR model on additional independent populations to ensure its robustness across different patient groups.
+2. **Feature Engineering:**
+Explore additional features beyond clinico-pathological factors. Consider incorporating genetic information (e.g., single-nucleotide polymorphisms) to enhance model performance.
+3. **Precision Medicine:**
+Investigate precision screening approaches that consider individual risk factors and genetic profiles.
+Evaluate the impact of precision treatment paradigms (adjuvant, neo-adjuvant, and metastatic) on breast cancer outcomes.
+4. **Population-Specific Models:**
+Develop models tailored to specific patient populations (e.g., high-risk patients, young or elderly patients).
+Consider age, ethnicity, and other demographic factors when designing and validating models.
+5. **Long-Term Monitoring:**
+Implement long-term monitoring of model performance in real-world clinical settings.
+Regularly update and revalidate models as new data becomes available.
+6. **Collaboration and Data Sharing:**
+Collaborate with other researchers and institutions to pool data and improve model generalization.
+Share model results and insights to contribute to breast cancer research.
+Remember that breast cancer is a complex disease, and continuous research and collaboration are essential for improving prediction models and patient outcomes.

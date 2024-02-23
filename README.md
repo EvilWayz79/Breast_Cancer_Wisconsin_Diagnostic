@@ -150,7 +150,7 @@ Based on these results for the confusion matrix, I would conclude that the class
 
 # Results Summary
 
-** Confusion Matrix Summary **
+**Confusion Matrix Summary**
 | Model | TN | FP | FN | TP |
 |-------|----|----|----|----|
 | MLP   | 41 |	2 |	 1 | 70 |
@@ -158,7 +158,7 @@ Based on these results for the confusion matrix, I would conclude that the class
 | LR    | 41 |  2 |  0 | 71 |
 
 
-** Model Index Summary **
+**Model Index Summary**
 
 | Model | Accuracy | Precision+ | Recall+ |    f1+   |
 |-------|----------|------------|---------|----------|

@@ -181,7 +181,7 @@ Based on the gathered results we can assert the following:
     * LR has the least combination between FP and FN (2, 0) from the models
 * Therefore, Logistic Regression appears to be the best model for the proposed Breast Cancer Wisconsin dataset, emphasizing its ability to minimize false negatives and accurately predict malignant cases.
 
-### Recomendations
+### Recommendations
 
 1. **Model Selection and Validation:**
 Continue using the Logistic Regression (LR) model as it performed well in terms of recall, F1 score, and minimizing false negatives.
